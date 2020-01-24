@@ -1,5 +1,5 @@
 <span>
-    Thực hiện Authentication và Authorisation _ Simple<br>
+    Thực hiện Authentication và Authorization _ Simple<br>
     Custom Page Login<br>
     Logout
 </span>
