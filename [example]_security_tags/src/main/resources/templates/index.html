@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+<body>
+    <h1>Page Index</h1>
+    <span>Dear <th:block sec:authentication="name"/> (role: <th:block sec:authentication="principal.authorities"/>) Welcome to Home Page </span>
+    <a th:href="@{/logout}">logout</a><br>
+    <div>
+        <div sec:authorize="hasRole('ADMIN')">
+            <a th:href="@{/admin}">Click to Page ADMIN</a>
+        </div>
+        <div sec:authorize="hasRole('ADMIN') or hasRole('GUEST')">
+            <a th:href="@{/guest}">Click to Page GUEST</a>
+        </div>
+    </div>
+</body>
+</html>
