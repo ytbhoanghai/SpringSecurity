@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="">
+<head>
+    <meta charset="UTF-8">
+    <title>Error</title>
+</head>
+<body>
+    <th:block th:if="${message != null}" th:text="${message}"/><br>
+    <a th:href="@{/index}">back to home page</a>
+</body>
+</html>
