@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin</title>
+</head>
+<body>
+<h1>Page Admin</h1>
+<span>Hello: <th:block sec:authentication="principal.authorities"/>: <th:block sec:authentication="name"/></span>
+<hr>
+<a th:href="@{/index}">click to home</a>
+</body>
+</html>
