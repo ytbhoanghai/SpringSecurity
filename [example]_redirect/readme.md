@@ -1,7 +1,7 @@
 <h3>Custom</h3>
 <ol>
     <li>Interface AccessDeniedHandler > Xử lý khi truy cập tài nguyên bị cấm.</li>
-    <li>Interface SuccessHandler > Xử lý khi truy cập thành công (thường là redirect).</li>
+    <li>Interface SimpleUrlAuthenticationSuccessHandler  > Xử lý khi truy cập thành công (thường là redirect).</li>
 </ol>
 <h3>Notice</h3>
 <ul>
