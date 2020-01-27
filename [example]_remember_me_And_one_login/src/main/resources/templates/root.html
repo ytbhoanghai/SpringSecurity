@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <title>Root</title>
+</head>
+<body>
+<h1>Page Root</h1>
+<span>Hello: <th:block sec:authentication="name"/></span>
+<hr>
+<a th:href="@{/index}">click to home</a>
+</body>
+</html>
